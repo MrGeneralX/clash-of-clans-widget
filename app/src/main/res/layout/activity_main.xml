@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1612"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clash Timers Widget"
+            android:textColor="#FFD05B"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="1. In Clash of Clans, go to Settings → More Settings → Data Export → Copy.
+2. Add the Clash Timers widget to your Home Screen.
+3. Tap '↻ Sync' on the widget to update all builders live!"
+            android:textColor="#D7C6B0"
+            android:textSize="13.5sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_widget_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Display Name on Widget"
+                android:textColor="#F3B63F"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_player_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:hint="Enter your Village Name (e.g. Kuswa)"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#8A7966"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_save_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_sync_button"
+                android:text="Save Name"
+                android:textColor="#23190D"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_widget_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sync &amp; Test Tools"
+                android:textColor="#F3B63F"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_sync_clipboard_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_sync_button"
+                android:text="↻ Sync from Clipboard Now"
+                android:textColor="#23190D"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_load_demo_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_action_pill"
+                android:text="Load Sample TH18 Village (Test Widget)"
+                android:textColor="#90E06C"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_manual_json"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="12dp"
+                android:gravity="top|start"
+                android:hint="Or paste raw Village JSON here manually..."
+                android:inputType="textMultiLine"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#8A7966"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_parse_manual_json"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_action_pill"
+                android:text="Sync Pasted JSON"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_status_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Status: Waiting for first sync..."
+            android:textColor="#C2B099"
+            android:textSize="13sp" />
+    </LinearLayout>
+</ScrollView>
