@@ -11,7 +11,7 @@ An offline, battery-friendly Android home screen widget that tracks your live **
 - **100% Offline & Private:** Requires zero internet permissions and never asks for your account login.
 
 ## How to Download & Install
-1. Open the https://github.com/MrGeneralX/clash-of-clans-widget page.
+1. Open the https://github.com/MrGeneralX/clash-of-clans-widget/releases/latest page.
 2. Under **Assets**, tap the `.apk` file to download it to your Android phone.
 3. Open the downloaded `.apk` and tap **Install** *(allow "Install unknown apps" for your browser if prompted)*.
 4. Open **Clash Timers** once to grant notification permissions and set your village display name.
